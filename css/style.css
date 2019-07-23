@@ -43,6 +43,7 @@ html, body {
     position: absolute;
     right: 20px; bottom: 10px;
     text-align: right;
+    width: 50%;
 }
 #title article .info span:first-child {
     font-size: 18px;
@@ -142,4 +143,7 @@ footer {
 footer p {
     text-align: center;
     font-weight: bold;
+}
+footer p:first-child {
+    padding-bottom: 5px;
 }
