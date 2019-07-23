@@ -1,0 +1,145 @@
+/* style.css */
+/*
+    main-color : #758c9b
+    bg-color : #f2f2f2
+    text-color : #d8aa82
+*/
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #333;
+}
+#title {
+    width: 100%;
+    height: 100%;
+    background: #758c9b;
+    position: relative;
+}
+#title article {
+    position: absolute;
+    top: 8%; right: 0; bottom: 8%; left: 15%;
+    background: #f2f2f2;
+    background-image: url('../images/main.png');
+    background-repeat: no-repeat;
+    background-position: 80% 60%;
+}
+#title article h1 {
+    position: absolute;
+    left: -0.5em; top: 0.2em;
+    font-size: 38px;
+    font-style: italic; 
+    font-weight: bolder;
+    color: #c49465;
+}
+#title article h1 span:last-child {
+    display: inline-block;
+    text-indent: 0.5em;
+}
+#title article .info {
+    position: absolute;
+    right: 20px; bottom: 10px;
+    text-align: right;
+}
+#title article .info span:first-child {
+    font-size: 18px;
+    font-weight: 900;
+    display: inline-block;
+    padding-bottom: 5px
+}
+#title article .info span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* location page */
+#location {
+    width: 100%;
+    height: 100%;
+    /* background: #ddd; */
+}
+#location h1 {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 32px;
+    color: #d8aa82;
+}
+#location h1::after {
+        content: "";
+        display: block;
+        width: 40px;
+        border: 1px solid #ccc;
+        margin: 20px auto;
+}
+#location .map {
+    padding-top: 10px;
+    position: relative;
+}
+#location .click {
+    width: 100%;
+    text-align: center;
+    background: #dce5ea;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.map iframe {
+    display: block;
+}
+
+#location .address {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 14px;
+}
+#location .address p {
+    padding-bottom: 20px;
+    padding-left: 35px;
+}
+#location .address span {
+    font-weight: bold;
+}
+#location .address span:after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    border-right: 2px solid #ccc;
+    margin: 0 10px;
+    
+}
+#location .call {
+    margin-top: 20px;
+    overflow: hidden;
+}
+#location .call div {
+    float: left;
+    width: 50%;
+}
+
+#location .call div p {
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+#location .call div:first-child {
+    /*border: 1px solid #000;*/
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+
+#location .call div:last-child {
+    text-align: center;
+}
+footer {
+    background: #dce5ea;
+    margin-top: 20px;
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
